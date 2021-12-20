@@ -3,14 +3,14 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 
-@SpringJUnitConfig(PostConstructPreDestroyDemo.class)
-public class PostConstructPreDestroyDemoTest {
+@SpringJUnitConfig(ClassWithPostConstructAndPreDestroy.class)
+class ClassWithPostConstructAndPreDestroyTest {
 
     @Autowired
-    private PostConstructPreDestroyDemo instance;
+    private ClassWithPostConstructAndPreDestroy instance;
 
     @Test
-    public void testNotNull() {
+    void testNotNull() {
         System.out.println("starting testNotNull()");
 
         Assertions.assertNotNull(instance);

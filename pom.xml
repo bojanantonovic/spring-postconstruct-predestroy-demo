@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ch.antonovic.examples</groupId>
-    <artifactId>postconstruct-predestroy-demo</artifactId>
+    <artifactId>spring-postconstruct-predestroy-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <spring-version>5.1.3.RELEASE</spring-version>
+        <spring-version>5.3.13</spring-version>
     </properties>
 
     <dependencies>
@@ -29,7 +29,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.3.1</version>
+            <version>5.8.2</version>
             <scope>test</scope>
         </dependency>
 
@@ -46,20 +46,17 @@
         </dependency>
     </dependencies>
 
-
     <build>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.0</version>
+                <version>3.8.1</version>
                 <configuration>
                     <release>11</release>
                 </configuration>
             </plugin>
         </plugins>
-
     </build>
 
 </project>

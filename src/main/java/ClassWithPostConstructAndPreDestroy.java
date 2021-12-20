@@ -1,7 +1,7 @@
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-public class PostConstructPreDestroyDemo {
+public class ClassWithPostConstructAndPreDestroy {
 
     @PostConstruct
     public void init() {
