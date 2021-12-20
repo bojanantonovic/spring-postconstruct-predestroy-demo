@@ -1,6 +1,6 @@
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Main {
+public class PostConstructPreDestroyMain {
 
     public static void main(String... args) {
         try (final var context = new AnnotationConfigApplicationContext(ClassWithPostConstructAndPreDestroy.class)) {
